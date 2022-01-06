@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Switch Box Level Writer</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Switch Box Level Writer</h1>
+    <p>
+      Input the desired size of the level.
+      Create the level with the controls below.
+      Name the level.
+      Then click on export file to generate the JSON file.
+    </p>
+    <div id="controls">
+      <h3>Controls</h3>
+      <div class="inline">
+        <span id="level-size-x" class="block">
+          <p class="control-label">X size:</p>
+          <input id="input-level-size-x" min="1" max="10" value="4" type="number">
+        </span>
+        <span id="level-size-y" class="block">
+          <p class="control-label">Y size:</p>
+          <input id="input-level-size-y" min="1" max="15" value="5" type="number">
+        </span>
+      </div>
+      <div class="inline">
+        <p class="control-label pad-left">
+          Level Size:
+        </p>
+        <select id="select-level-size">
+          <option value="easy">Easy</option>
+          <option value="normal">Normal</option>
+          <option value="hard">Hard</option>
+        </select>
+        <br>
+        <p class="control-label pad-left">
+          <button id="button-update-map">Update Map</button>
+        </p>
+      </div>
+      <div class="inline">
+        <p class="control-label pad-left">
+          Level Name:
+        </p>
+        <input id="input-level-name" value="Unnamed">
+        <br>
+        <p class="control-label pad-left">
+          Level Number:
+        </p>
+        <input id="input-level-number" min="1" value="3" type="number">
+        <br>
+        <p class="control-label pad-left">
+          <button id="button-generate-file">Export File</button>
+        </p>
+      </div>
+      <div>
+        <p>
+          Selected Color: <span id="selected-color">None</span>
+        </p>
+        <button id="button-select-color-blue" class="button-select-color">Blue</button>
+        <button id="button-select-color-green" class="button-select-color">Green</button>
+        <button id="button-select-color-red" class="button-select-color">Red</button>
+        <button id="button-select-color-yellow" class="button-select-color">Yellow</button>
+      </div>
+    </div>
+    <div id="gamemap">
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+</body>
+</html>

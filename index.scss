@@ -1,0 +1,43 @@
+body, p, h3, h4 {
+  margin: 0;
+}
+
+div#controls {
+  background-color: #ddd;
+  border: solid 0.0165em black;
+  border-radius: 1em;
+  width: 75%;
+  margin: 2em auto;
+  padding: 1em 2em;
+
+  p.control-label {
+    display: inline-block;
+    margin: 0.5em 0;
+  }
+
+  p.pad-left {
+    padding-left: 1em;
+  }
+
+  span.block {
+    display: block;
+  }
+}
+
+div.inline {
+  display: inline-block;
+  vertical-align: top;
+}
+
+div#gamemap {
+  text-align: center;
+
+  div.tile {
+    background-color: #ccc;
+    // width: 4em;
+    // height: 4em;
+    display: inline-block;
+    border: solid 0.165em black;
+    margin: 0.15em;
+  }
+}
