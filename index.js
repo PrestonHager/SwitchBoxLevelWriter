@@ -10,10 +10,10 @@ const LEVEL_SIZES = {
 };
 
 const COLOR_MAP = {
-  "Blue": "#262ceb",
-  "Green": "#38b833",
-  "Red": "#d11919",
-  "Yellow": "#e8e23f"
+  "blue": "#262ceb",
+  "green": "#38b833",
+  "red": "#d11919",
+  "yellow": "#e8e23f"
 };
 
 const KEY_VALUES = "#@TL";
